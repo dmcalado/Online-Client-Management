@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cli="http://multicert.pt/clientmanagement">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cli:getClientByNIFRequest>
+         <cli:nif>252432720</cli:nif>
+      </cli:getClientByNIFRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
