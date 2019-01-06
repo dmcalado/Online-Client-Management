@@ -1,10 +1,14 @@
 package pt.multicert.clientmanagement.data;
 
-import org.hibernate.*;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
-import pt.multicert.clientmanagement.ws_objects.*;
+import org.springframework.stereotype.Component;
 import pt.multicert.clientmanagement.exceptions.*;
+import pt.multicert.clientmanagement.services.ErrorCodes;
+import pt.multicert.clientmanagement.ws_objects.ClientInfo;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -12,6 +16,8 @@ import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Component
 public class DataLayer {
     private static SessionFactory factory;
 
@@ -19,7 +25,6 @@ public class DataLayer {
         Configuration config = null;
         try{
             config = new Configuration();
-            //config.addClass(Client.class);
             config.addResource("Client.hbm.xml");
             this.factory = config.configure().buildSessionFactory();
             System.err.println("Factory built!");
@@ -30,27 +35,41 @@ public class DataLayer {
     }
 
     //Add a new client
-    public void AddClient(ClientInfo clientInfo) throws AddClientException {
+    public void addClient(ClientInfo clientInfo) throws ClientManagementException {
 
         Client client = null;
         try{
+            //validating info before send to db
+            validateNIF(clientInfo.getNif());
+            validateName(clientInfo.getName());
+
             client = new Client(clientInfo.getNif(), clientInfo.getName(), clientInfo.getMorada(), clientInfo.getTelefone());
-            if (GetClient(client.getNif()) == null){
+            if (getClient(client.getNif()) == null){
                 //if the client does not exist, add it to DB.
-                AddClientAux(client);
+                addClientAux(client);
                 return;
             }
-            throw new ClientAlreadyExistsException("The client alredy exists!");
+            throw new ClientAlreadyExistsException(ErrorCodes.CLIENT_ALREADY_EXISTS, ErrorCodes.CLIENT_ALREADY_EXISTS_MESSAGE);
+        }
+        catch (ClientAlreadyExistsException ex){
+            throw ex;
+        }
+        catch (InvalidNIFException ex){
+            throw ex;
+        }
+        catch (EmptyNameException ex){
+            throw ex;
         }
         catch (ClientManagementException ex){
             System.err.println(ex.getMessage());
-            throw new AddClientException(ex.getMessage());
+            throw new AddClientException(ex.getErrorCode(), ex.getErrorMessage());
         }
 
     }
 
 
-    private void AddClientAux(Client client) throws AddClientException{
+
+    private void addClientAux(Client client) throws AddClientException{
         Session session = null;
         Transaction tx = null;
 
@@ -65,31 +84,36 @@ public class DataLayer {
         } catch (Exception ex) {
             if (tx!=null) tx.rollback();
             System.err.println("Failed to add a new client." + ex.getMessage());
-            throw new AddClientException("Failed to add client to DB.");
+            throw new AddClientException(ErrorCodes.ADD_CLIENT_FAILED, ErrorCodes.ADD_CLIENT_FAILED_MESSAGE);
 
         } finally {
             session.close();
         }
     }
 
-    public ClientInfo GetClient(int client_nif) throws GetClientException {
+    public ClientInfo getClient(int client_nif) throws ClientManagementException {
         Session session = null;
         Client client = null;
 
         try {
+            validateNIF(client_nif);
             session = factory.openSession();
             client = (Client)session.get(Client.class, client_nif);
             return getClientInfoFromClient(client);
 
-        } catch (Exception ex) {
+        } catch (InvalidNIFException ex){
+            throw ex;
+        }
+        catch (Exception ex) {
             System.err.println("Failed to get client info." + ex.getMessage());
-            throw new GetClientException("Failed to get Client Info!");
+            throw new GetClientException(ErrorCodes.GET_CLIENT_BY_NIF_FAILED, ErrorCodes.GET_CLIENT_BY_NIF_MESSAGE);
         } finally {
-            session.close();
+            if (session != null)
+                session.close();
         }
     }
 
-    public List<ClientInfo> GetClientsByName (String name) throws GetClientException{
+    public List<ClientInfo> getClientsByName(String name) throws ClientManagementException{
         Session session = null;
         CriteriaBuilder criteriaBuilder = null;
         CriteriaQuery<Client> queryCriteria = null;
@@ -101,9 +125,7 @@ public class DataLayer {
         try {
             session = factory.openSession();
             //validate name
-            if (name == null || name.isEmpty()){
-                return new ArrayList<>();
-            }
+            validateName(name);
             //build query conditions
             criteriaBuilder = session.getCriteriaBuilder();
             queryCriteria = criteriaBuilder.createQuery(Client.class);
@@ -117,9 +139,11 @@ public class DataLayer {
 
             return getClientInfoFromListofClients(dbClients);
 
-        } catch (Exception ex){
-            System.err.println("Failed to get client info." + ex);
-            throw new GetClientException("The wild card is empty!");
+        } catch (EmptyNameException ex){
+            throw ex;
+        }
+        catch (Exception ex){
+            throw new GetClientException(ErrorCodes.GET_CLIENT_BY_NAME_FAILED, ErrorCodes.GET_CLIENT_NY_NAME_MESSAGE);
         }
 
         finally {
@@ -127,7 +151,7 @@ public class DataLayer {
         }
     }
 
-    public List<ClientInfo> GetAllClients() throws GetAllClientsException {
+    public List<ClientInfo> getAllClients() throws GetAllClientsException {
         Session session = null;
         List<Client> clients;
 
@@ -138,35 +162,40 @@ public class DataLayer {
 
         } catch (Exception ex) {
             System.err.println("Failed to get all client info." + ex);
-            throw new GetAllClientsException("Failed to get all clients info.");
+            throw new GetAllClientsException(ErrorCodes.GET_ALL_CLIENTS_FAILED, ErrorCodes.GET_ALL_CLIENT_FAILED_MESSAGE);
 
         } finally {
             session.close();
         }
     }
 
-    public void DeleteClient (int client_nif) throws ClientDoesntExistException, DeleteClientException {
+    public void deleteClient(int client_nif) throws ClientManagementException {
         Session session = null;
         Transaction tx = null;
         Client client = null;
 
         try{
+            validateNIF(client_nif);
             session = factory.openSession();
             tx = session.beginTransaction();
             client = session.get(Client.class, client_nif);
             if (client == null)
-                throw new ClientDoesntExistException("Client with NIF [" + client_nif + "] does not exist");
+                throw new ClientDoesntExistException(ErrorCodes.CLIENT_NOT_FOUND, ErrorCodes.CLIENT_NOT_FOUND_MESSAGE);
             session.delete(client);
             tx.commit();
 
-        }catch (ClientDoesntExistException ex){
+        }catch (InvalidNIFException ex){
+            throw ex;
+        }
+        catch (ClientDoesntExistException ex){
             throw ex;
         }
         catch (Exception ex){
             if (tx != null) tx.rollback();
-            throw  new DeleteClientException("Failed to delete client with NIF:[" + client_nif + "]");
+            throw  new DeleteClientException(ErrorCodes.DELETE_CLIENT_FAILED, ErrorCodes.DELETE_CLIENT_FAILED_MESSAGE);
         }finally {
-            session.close();
+            if (session != null)
+                session.close();
         }
     }
 
@@ -193,6 +222,19 @@ public class DataLayer {
         auxClient.setTelefone(client.getTelefone());
 
         return auxClient;
+    }
+
+    private void validateNIF(int nif)throws InvalidNIFException{
+
+        if (nif <= 0)
+            throw new InvalidNIFException(ErrorCodes.INVALID_NIF, ErrorCodes.INVALID_NIF_MESSAGE);
+    }
+
+
+    private void validateName(String name)throws EmptyNameException {
+
+        if (name == null || name.isEmpty())
+            throw new EmptyNameException(ErrorCodes.EMPTY_NAME, ErrorCodes.EMPTY_NAME_MESSAGE);
     }
 
 }

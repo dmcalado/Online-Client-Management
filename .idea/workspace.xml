@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/UnitBaseTests.java" line="12" mnemonic="8" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="77f7314e-e5d0-4375-8021-2fd12553ac77" name="Default Changelist" comment="" />
+    <list default="true" id="77f7314e-e5d0-4375-8021-2fd12553ac77" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/EmptyNameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/InvalidNIFException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ErrorCodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/ServiceLayerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/AddClientUnitTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/DeleteClientUnitTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/GetClientUnitTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/UnitBaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customerManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/customerManagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/data/DataLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/data/DataLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/AddClientException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/AddClientException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientDoesntExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientDoesntExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientManagementException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientManagementException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/DeleteClientException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/DeleteClientException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/GetAllClientsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/GetAllClientsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/GetClientException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/GetClientException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ServicesLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ServicesLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ClientInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ClientInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ExecResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ExecResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNIFRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNIFRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNIFResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNIFResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNameRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNameRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNameResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNameResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ListClientsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ListClientsRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ListClientsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ListClientsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ObjectFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/package-info.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,13 +51,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="customerManagement" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ErrorCodes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="89" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/data/DataLayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-395">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/DeleteClientUnitTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -23,25 +86,59 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ServicesLayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="162" column="35" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="35" />
+            <state relative-caret-position="1011">
+              <caret line="149" column="69" selection-start-line="149" selection-start-column="69" selection-end-line="149" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/UnitBaseTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="94" column="45" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="80" />
+            <state relative-caret-position="105">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/AddClientUnitTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="34" selection-start-line="34" selection-end-line="47" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/GetClientUnitTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="150" selection-start-line="150" selection-end-line="159" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,8 +147,28 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/data/DataLayer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/UnitTests.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/ServiceLayerTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/InvalidInputException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientAlreadyExistsException.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/DataLayerTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/GetClientException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientManagementException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/AddClientException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientDoesntExistException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/DeleteClientException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/EmptyNameException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/GetAllClientsException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/InvalidNIFException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ErrorCodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ServicesLayer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/AddClientUnitTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/data/DataLayer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/UnitBaseTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/GetClientUnitTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/DeleteClientUnitTests.java" />
       </list>
     </option>
   </component>
@@ -65,7 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,6 +223,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -129,40 +255,65 @@
             <path>
               <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
               <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
               <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
               <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
               <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate3" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546627898721" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546800133843" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pt.multicert.clientmanagement.exceptions" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -213,85 +364,263 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67469877" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.3253012" side_tool="true" weight="0.2639485" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/data/DataLayer.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/hibernate3/pt/multicert/clientmanagement/data/Client.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Client.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soapUI.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="94" column="45" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="80" />
+        <state relative-caret-position="753">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/hibernate3/pt/multicert/clientmanagement/data/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/config/WebServiceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#679#680#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientAlreadyExistsException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/data/DataLayer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.0.Final/hibernate-core-5.4.0.Final.jar!/org/hibernate/cfg/Configuration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-395">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="90">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.0.Final/hibernate-core-5.4.0.Final.jar!/org/hibernate/SessionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/ServiceLayerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/InvalidInputException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.0.Final/hibernate-core-5.4.0.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/AddClientException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding>
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientAlreadyExistsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientDoesntExistException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/ClientManagementException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+          <folding>
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/DeleteClientException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/EmptyNameException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/GetAllClientsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/GetClientException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/exceptions/InvalidNIFException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding>
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ErrorCodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="89" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-ws-core/3.0.3.RELEASE/spring-ws-core-3.0.3.RELEASE.jar!/org/springframework/ws/server/endpoint/MethodEndpoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-ws-core/3.0.3.RELEASE/spring-ws-core-3.0.3.RELEASE.jar!/org/springframework/ws/server/MessageDispatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ServicesLayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="162" column="35" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="35" />
+        <state relative-caret-position="1011">
+          <caret line="149" column="69" selection-start-line="149" selection-start-column="69" selection-end-line="149" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/AddClientUnitTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="34" selection-start-line="34" selection-end-line="47" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/UnitBaseTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/GetClientUnitTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="150" selection-start-line="150" selection-end-line="159" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/DeleteClientUnitTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/data/DataLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>

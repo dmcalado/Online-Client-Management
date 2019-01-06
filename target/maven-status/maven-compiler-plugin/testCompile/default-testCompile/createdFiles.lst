@@ -1,0 +1,5 @@
+pt/multicert/clientmanagement/integration/ServiceLayerTests.class
+pt/multicert/clientmanagement/unit/GetClientUnitTests.class
+pt/multicert/clientmanagement/unit/DeleteClientUnitTests.class
+pt/multicert/clientmanagement/unit/AddClientUnitTests.class
+pt/multicert/clientmanagement/unit/UnitBaseTests.class

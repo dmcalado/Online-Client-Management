@@ -1,5 +1,7 @@
 package pt.multicert.clientmanagement.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -14,11 +16,16 @@ import java.util.List;
 public class ServicesLayer {
     private static final String NAMESPACE = "http://multicert.pt/clientmanagement";
 
-    private DataLayer dbLayer = new DataLayer();
+    private DataLayer dbLayer;
+
+    @Autowired
+    public ServicesLayer(DataLayer dataLayer){
+        this.dbLayer = dataLayer;
+    }
 
     @PayloadRoot(namespace = NAMESPACE, localPart = "addClientRequest")
     @ResponsePayload
-    public AddClientResponse AddClient(@RequestPayload AddClientRequest request){
+    public AddClientResponse addClient(@RequestPayload AddClientRequest request){
 
         ClientInfo clientInfo = null;
         AddClientResponse response = new AddClientResponse();
@@ -28,28 +35,17 @@ public class ServicesLayer {
 
         clientInfo = request.getClientInfo();
 
-        //validating info before send to db
-        if (clientInfo.getNif() <= 0){
-            response.getResult().setErrorCode(ErrorCodes.INVALID_NIF);
-            response.getResult().setErrorMessage("Nif inválido");
-            return response;
-        }
 
-        if (clientInfo.getName() == null || (clientInfo.getName().isEmpty())){
-            response.getResult().setErrorCode(ErrorCodes.EMPTY_NAME);
-            response.getResult().setErrorMessage("Nome vazio");
-            return response;
-        }
         try{
-            this.dbLayer.AddClient(clientInfo);
+            this.dbLayer.addClient(clientInfo);
             response.getResult().setErrorCode(ErrorCodes.OK);
             response.getResult().setErrorMessage("Success!");
         }
-        catch (AddClientException ex)
+        catch (ClientManagementException ex)
         {
             System.err.println("Failed to add a new client " + ex.getMessage());
-            response.getResult().setErrorCode(ErrorCodes.ADD_CLIENT_FAILED);
-            response.getResult().setErrorMessage(ex.getMessage());
+            response.getResult().setErrorCode(ex.getErrorCode());
+            response.getResult().setErrorMessage(ex.getErrorMessage());
         }
         //going to store client into database
         return  response;
@@ -57,7 +53,7 @@ public class ServicesLayer {
 
     @PayloadRoot(namespace = NAMESPACE, localPart = "getClientByNameRequest")
     @ResponsePayload
-    public GetClientByNameResponse GetClientByName(@RequestPayload GetClientByNameRequest request){
+    public GetClientByNameResponse getClientByName(@RequestPayload GetClientByNameRequest request){
 
         GetClientByNameResponse response = new GetClientByNameResponse();
         ExecResult result = new ExecResult();
@@ -66,32 +62,25 @@ public class ServicesLayer {
 
         response.setResult(result);
 
-        //validate the input
-        if (request.getName() == null || (request.getName().isEmpty())){
-            response.getResult().setErrorCode(ErrorCodes.EMPTY_NAME);
-            response.getResult().setErrorMessage("Nome vazio");
-            return response;
-        }
         try{
-            clients = this.dbLayer.GetClientsByName(request.getName());
+            clients = this.dbLayer.getClientsByName(request.getName());
             for (ClientInfo client : clients){
                 response.getClient().add(client);
             }
             response.getResult().setErrorCode(ErrorCodes.OK);
             response.getResult().setErrorMessage("Success!");
         }
-        catch (GetClientException ex)
+        catch (ClientManagementException ex)
         {
-            System.err.println("Failed to get client ");
-            response.getResult().setErrorCode(ErrorCodes.GET_CLIENT_BY_NAME_FAILED);
-            response.getResult().setErrorMessage(ex.getMessage());
+            response.getResult().setErrorCode(ex.getErrorCode());
+            response.getResult().setErrorMessage(ex.getErrorMessage());
         }
         return  response;
     }
 
     @PayloadRoot(namespace = NAMESPACE, localPart = "getClientByNIFRequest")
     @ResponsePayload
-    public GetClientByNIFResponse GetClientByNIF(@RequestPayload GetClientByNIFRequest request){
+    public GetClientByNIFResponse getClientByNIF(@RequestPayload GetClientByNIFRequest request){
 
         GetClientByNIFResponse response = new GetClientByNIFResponse();
         ExecResult result = new ExecResult();
@@ -99,31 +88,23 @@ public class ServicesLayer {
 
         response.setResult(result);
 
-        //validate the input
-        if (request.getNif() <= 0){
-            //validating info before send it to db
-            response.getResult().setErrorCode(ErrorCodes.INVALID_NIF);
-            response.getResult().setErrorMessage("Invalid Nif.");
-            return response;
-        }
         try{
-            client = this.dbLayer.GetClient(request.getNif());
+            client = this.dbLayer.getClient(request.getNif());
             response.setClient(client);
             response.getResult().setErrorCode(ErrorCodes.OK);
             response.getResult().setErrorMessage("Success!");
         }
-        catch (GetClientException ex)
+        catch (ClientManagementException ex)
         {
-            System.err.println("Failed to get client ");
-            response.getResult().setErrorCode(ErrorCodes.GET_CLIENT_BY_NAME_FAILED);
-            response.getResult().setErrorMessage(ex.getMessage());
+            response.getResult().setErrorCode(ex.getErrorCode());
+            response.getResult().setErrorMessage(ex.getErrorMessage());
         }
         return  response;
     }
 
     @PayloadRoot(namespace = NAMESPACE, localPart = "listClientsRequest")
     @ResponsePayload
-    public ListClientsResponse GetAllClients(@RequestPayload ListClientsRequest request){
+    public ListClientsResponse getAllClients(@RequestPayload ListClientsRequest request){
 
         ListClientsResponse response = new ListClientsResponse();
         ExecResult result = new ExecResult();
@@ -133,7 +114,7 @@ public class ServicesLayer {
         response.setResult(result);
 
         try{
-            clients = this.dbLayer.GetAllClients();
+            clients = this.dbLayer.getAllClients();
             for (ClientInfo client : clients){
                 response.getClient().add(client);
             }
@@ -143,15 +124,15 @@ public class ServicesLayer {
         catch (GetAllClientsException ex)
         {
             System.err.println("Failed to get all clients ");
-            response.getResult().setErrorCode(ErrorCodes.GET_ALL_CLIENTS_FAILED);
-            response.getResult().setErrorMessage(ex.getMessage());
+            response.getResult().setErrorCode(ex.getErrorCode());
+            response.getResult().setErrorMessage(ex.getErrorMessage());
         }
         return  response;
     }
 
     @PayloadRoot(namespace = NAMESPACE, localPart = "removeClientRequest")
     @ResponsePayload
-    public RemoveClientResponse RemoveClient(@RequestPayload RemoveClientRequest request){
+    public RemoveClientResponse removeClient(@RequestPayload RemoveClientRequest request){
 
         RemoveClientResponse response = new RemoveClientResponse();
         ExecResult result = new ExecResult();
@@ -160,39 +141,16 @@ public class ServicesLayer {
         response.setResult(result);
 
         try{
-            if (request.getNif() <= 0){
-                //validating info before send it to db
-                response.getResult().setErrorCode(ErrorCodes.INVALID_NIF);
-                response.getResult().setErrorMessage("Invalid Nif.");
-                return response;
-            }
-
-            this.dbLayer.DeleteClient(request.getNif());
+            this.dbLayer.deleteClient(request.getNif());
             response.getResult().setErrorCode(ErrorCodes.OK);
             response.getResult().setErrorMessage("Success!");
         }
-        catch (ClientDoesntExistException ex){
-            System.err.println("Client not found!");
-            response.getResult().setErrorCode(ErrorCodes.CLIENT_NOT_FOUND);
-            response.getResult().setErrorMessage(ex.getMessage());
-        }
-        catch (DeleteClientException ex){
-            System.err.println("Failed to delete client ");
-            response.getResult().setErrorCode(ErrorCodes.DELETE_CLIENT_FAILED);
-            response.getResult().setErrorMessage(ex.getMessage());
+        catch (ClientManagementException ex){
+            response.getResult().setErrorCode(ex.getErrorCode());
+            response.getResult().setErrorMessage(ex.getErrorMessage());
         }
         return  response;
     }
 
-    public class ErrorCodes{
-        public static final int INVALID_NIF = -10;
-        public static final int EMPTY_NAME = -11;
-        public static final int ADD_CLIENT_FAILED = -12;
-        public static final int GET_CLIENT_BY_NAME_FAILED = -13;
-        public static final int GET_ALL_CLIENTS_FAILED = -14;
-        public static final int DELETE_CLIENT_FAILED = -15;
-        public static final int CLIENT_NOT_FOUND = -16;
-        public static final int OK = 1;
-    }
     
 }
