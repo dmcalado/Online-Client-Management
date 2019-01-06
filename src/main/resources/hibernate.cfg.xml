@@ -23,7 +23,7 @@
         </property>
 
         <property name = "hibernate.connection.password">
-            multicert
+            multicert2019
         </property>
 
         <!-- List of XML mapping files -->

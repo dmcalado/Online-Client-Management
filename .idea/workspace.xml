@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77f7314e-e5d0-4375-8021-2fd12553ac77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/AddClientServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/DeleteClientServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/GetClientServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customerManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/customerManagement.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ErrorCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ErrorCodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ServicesLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/services/ServicesLayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ClientInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ClientInfo.java" afterDir="false" />
@@ -27,32 +21,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/ServiceLayerTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/AddClientUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/AddClientUnitTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/DeleteClientUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/DeleteClientUnitTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/GetClientUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/GetClientUnitTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/UnitBaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Client.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/customerManagement.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/clients.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/hibernate3/pt/multicert/clientmanagement/data/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jaxb2/.xjc-xjcStaleFlag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pt.multicert.clientmanagement.integration.ServiceLayerTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pt.multicert.clientmanagement.unit.AddClientUnitTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pt.multicert.clientmanagement.unit.DataLayerTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pt.multicert.clientmanagement.unit.DeleteClientUnitTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pt.multicert.clientmanagement.unit.GetClientUnitTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pt.multicert.clientmanagement.integration.ServiceLayerTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pt.multicert.clientmanagement.unit.AddClientUnitTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pt.multicert.clientmanagement.unit.DataLayerTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pt.multicert.clientmanagement.unit.DeleteClientUnitTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pt.multicert.clientmanagement.unit.GetClientUnitTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/customerManagement.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,18 +36,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/AddClientServiceTests.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="47" column="20" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="20" />
-              <folding>
-                <element signature="method#rollbackAddClient#0;class#AddClientServiceTests#0" />
-              </folding>
+            <state relative-caret-position="-284">
+              <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/config/WebServiceConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/DeleteClientServiceTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
@@ -90,6 +74,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/clients.xsd">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Client.hbm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/GetClientServiceTests.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,19 +104,6 @@
               <caret line="195" column="48" selection-start-line="195" selection-start-column="41" selection-end-line="195" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/BaseTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="37" />
-              <folding>
-                <element signature="method#getClientInfo#0;class#BaseTests#0" />
-                <element signature="method#deleteClientSetup#0;class#BaseTests#0" />
               </folding>
             </state>
           </provider>
@@ -132,15 +126,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="10">
               <caret line="171" column="16" selection-start-line="171" selection-start-column="16" selection-end-line="171" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/DeleteClientUnitTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -189,6 +174,8 @@
         <option value="$PROJECT_DIR$/src/test/resources/logback-test.xml" />
         <option value="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/unit/DeleteClientUnitTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/pt/multicert/clientmanagement/integration/DeleteClientServiceTests.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -250,33 +237,6 @@
               <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -284,39 +244,6 @@
               <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
-              <item name="integration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customerManagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online-Client-Management" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clientmanagement" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,7 +253,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546810935450" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546817669167" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -417,24 +344,11 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/generated-sources/hibernate3/pt/multicert/clientmanagement/data/Client.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Client.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/soapUI.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/beans.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/config/WebServiceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -559,13 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="153" selection-start-line="153" selection-end-line="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -695,6 +602,44 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/clients.xsd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Client.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/config/WebServiceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
