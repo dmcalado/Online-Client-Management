@@ -3,7 +3,6 @@ package pt.multicert.clientmanagement.unit;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import pt.multicert.clientmanagement.data.Client;
 import pt.multicert.clientmanagement.data.DataLayer;
 import pt.multicert.clientmanagement.exceptions.ClientManagementException;
 import pt.multicert.clientmanagement.exceptions.EmptyNameException;
@@ -13,49 +12,25 @@ import pt.multicert.clientmanagement.ws_objects.ClientInfo;
 import java.util.List;
 
 import static org.junit.Assert.*;
-import static pt.multicert.clientmanagement.unit.UnitBaseTests.*;
-import static pt.multicert.clientmanagement.unit.UnitBaseTests.TELEFONE;
 
-public class GetClientUnitTests {
+public class GetClientUnitTests extends BaseTests {
 
     @BeforeClass
-    public static void createClient(){
+    public static void createClients(){
 
-        DataLayer dbLayer = new DataLayer();
-        ClientInfo client = null;
-
-        try{
-            //create client
-            client = new ClientInfo();
-            client.setName(CLIENT_NAME);
-            client.setNif(NIF_OK);
-            client.setMorada(MORADA);
-            client.setTelefone(TELEFONE);
-            dbLayer.addClient(client);
-
-            //create client
-            client = new ClientInfo();
-            client.setName(CLIENT_NAME);
-            client.setNif(NIF_OTHER_OK);
-            client.setMorada(MORADA);
-            client.setTelefone(TELEFONE);
-            dbLayer.addClient(client);
-        }catch (ClientManagementException ex){
-            fail("Received exception! Fail!");
-        }
+        //create first client
+        addClientSetup(CLIENT_NAME, NIF_OK, MORADA, TELEFONE);
+        //create second client
+        addClientSetup(CLIENT_NAME, NIF_OTHER_OK, MORADA, TELEFONE);
     }
 
     @AfterClass
     public static void rollbackAddClient(){
 
-        DataLayer dbLayer = new DataLayer();
-
-        try{
-            dbLayer.deleteClient(NIF_OK);
-            dbLayer.deleteClient(NIF_OTHER_OK);
-        }catch (Exception ex){
-            fail("Received exception! Fail!");
-        }
+        //delete first client;
+        deleteClientSetup(NIF_OK);
+        //delete second client;
+        deleteClientSetup(NIF_OTHER_OK);
     }
     //TEST 1 - Get Client its NIF
     @Test
@@ -145,8 +120,9 @@ public class GetClientUnitTests {
 
     }
 
+    //TEST 6 - Client does not exist by name
     @Test
-    public void getClientThatDoesnotExist(){
+    public void getClientThatDoesnotExistByNIF(){
 
         DataLayer dbLayer = new DataLayer();
         ClientInfo client;
@@ -154,6 +130,22 @@ public class GetClientUnitTests {
         try{
             client = dbLayer.getClient(NIF_OTHER2_OK);
             assertNull(client);
+
+        }catch (ClientManagementException ex){
+            fail("Received exception! Fail!");
+        }
+    }
+
+    //TEST 7 - Client does not exist by name
+    @Test
+    public void getClientThatDoesnotExistByName(){
+
+        DataLayer dbLayer = new DataLayer();
+        List<ClientInfo> clients;
+
+        try{
+            clients = dbLayer.getClientsByName(CLIENT_NAME_DOES_NOT_EXIST);
+            assertTrue(clients.size() == 0);
 
         }catch (ClientManagementException ex){
             fail("Received exception! Fail!");

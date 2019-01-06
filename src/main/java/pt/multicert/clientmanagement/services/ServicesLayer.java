@@ -39,7 +39,7 @@ public class ServicesLayer {
         try{
             this.dbLayer.addClient(clientInfo);
             response.getResult().setErrorCode(ErrorCodes.OK);
-            response.getResult().setErrorMessage("Success!");
+            response.getResult().setErrorMessage(ErrorCodes.OK_MESSAGE);
         }
         catch (ClientManagementException ex)
         {
@@ -67,8 +67,15 @@ public class ServicesLayer {
             for (ClientInfo client : clients){
                 response.getClient().add(client);
             }
-            response.getResult().setErrorCode(ErrorCodes.OK);
-            response.getResult().setErrorMessage("Success!");
+            if (clients.isEmpty()){
+                response.getResult().setErrorCode(ErrorCodes.CLIENT_NOT_FOUND);
+                response.getResult().setErrorMessage(ErrorCodes.CLIENT_NOT_FOUND_MESSAGE);
+            }
+            else{
+                response.getResult().setErrorCode(ErrorCodes.OK);
+                response.getResult().setErrorMessage(ErrorCodes.OK_MESSAGE);
+            }
+
         }
         catch (ClientManagementException ex)
         {
@@ -91,8 +98,14 @@ public class ServicesLayer {
         try{
             client = this.dbLayer.getClient(request.getNif());
             response.setClient(client);
-            response.getResult().setErrorCode(ErrorCodes.OK);
-            response.getResult().setErrorMessage("Success!");
+            if (client == null){
+                response.getResult().setErrorCode(ErrorCodes.CLIENT_NOT_FOUND);
+                response.getResult().setErrorMessage(ErrorCodes.CLIENT_NOT_FOUND_MESSAGE);
+            }
+            else{
+                response.getResult().setErrorCode(ErrorCodes.OK);
+                response.getResult().setErrorMessage(ErrorCodes.OK_MESSAGE);
+            }
         }
         catch (ClientManagementException ex)
         {
@@ -119,7 +132,7 @@ public class ServicesLayer {
                 response.getClient().add(client);
             }
             response.getResult().setErrorCode(ErrorCodes.OK);
-            response.getResult().setErrorMessage("Success!");
+            response.getResult().setErrorMessage(ErrorCodes.OK_MESSAGE);
         }
         catch (GetAllClientsException ex)
         {
@@ -143,7 +156,7 @@ public class ServicesLayer {
         try{
             this.dbLayer.deleteClient(request.getNif());
             response.getResult().setErrorCode(ErrorCodes.OK);
-            response.getResult().setErrorMessage("Success!");
+            response.getResult().setErrorMessage(ErrorCodes.OK_MESSAGE);
         }
         catch (ClientManagementException ex){
             response.getResult().setErrorCode(ex.getErrorCode());

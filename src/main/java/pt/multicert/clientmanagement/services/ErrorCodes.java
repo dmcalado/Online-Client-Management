@@ -26,4 +26,5 @@ public class ErrorCodes{
     public static final int CLIENT_NOT_FOUND = -16;
     public static final String CLIENT_NOT_FOUND_MESSAGE = "Client does not exist!";
     public static final int OK = 1;
+    public static final String OK_MESSAGE = "SUCCESS!";
 }

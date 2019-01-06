@@ -10,7 +10,7 @@ import pt.multicert.clientmanagement.exceptions.InvalidNIFException;
 import pt.multicert.clientmanagement.ws_objects.ClientInfo;
 
 import static org.junit.Assert.fail;
-import static pt.multicert.clientmanagement.unit.UnitBaseTests.*;
+import static pt.multicert.clientmanagement.unit.BaseTests.*;
 
 public class AddClientUnitTests {
 
