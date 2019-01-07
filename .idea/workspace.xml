@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77f7314e-e5d0-4375-8021-2fd12553ac77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/AddClientResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ClientInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ClientInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ExecResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ExecResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNIFRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNIFRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNIFResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNIFResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNameRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNameRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNameResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/GetClientByNameResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ListClientsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ListClientsRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ListClientsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ListClientsResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/RemoveClientResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/ws_objects/package-info.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="135">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -47,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -253,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546820139683" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546821839710" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -622,16 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/data/DataLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -639,10 +613,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/multicert/clientmanagement/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
