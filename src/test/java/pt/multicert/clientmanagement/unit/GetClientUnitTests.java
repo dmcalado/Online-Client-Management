@@ -4,6 +4,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import pt.multicert.clientmanagement.data.DataLayer;
+import pt.multicert.clientmanagement.exceptions.ClientDoesntExistException;
 import pt.multicert.clientmanagement.exceptions.ClientManagementException;
 import pt.multicert.clientmanagement.exceptions.EmptyNameException;
 import pt.multicert.clientmanagement.exceptions.InvalidNIFException;
@@ -121,19 +122,13 @@ public class GetClientUnitTests extends BaseTests {
     }
 
     //TEST 6 - Client does not exist by name
-    @Test
-    public void getClientThatDoesnotExistByNIF(){
+    @Test(expected = ClientDoesntExistException.class)
+    public void getClientThatDoesnotExistByNIF() throws ClientManagementException{
 
         DataLayer dbLayer = new DataLayer();
-        ClientInfo client;
 
-        try{
-            client = dbLayer.getClient(NIF_OTHER2_OK);
-            assertNull(client);
+        dbLayer.getClient(NIF_OTHER2_OK);
 
-        }catch (ClientManagementException ex){
-            fail("Received exception! Fail!");
-        }
     }
 
     //TEST 7 - Client does not exist by name

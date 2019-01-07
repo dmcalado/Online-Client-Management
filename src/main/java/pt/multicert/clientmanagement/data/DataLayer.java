@@ -44,7 +44,7 @@ public class DataLayer {
             validateName(clientInfo.getName());
 
             client = new Client(clientInfo.getNif(), clientInfo.getName(), clientInfo.getMorada(), clientInfo.getTelefone());
-            if (getClient(client.getNif()) == null){
+            if (getClientAux(client.getNif()) == null){
                 //if the client does not exist, add it to DB.
                 addClientAux(client);
                 return;
@@ -91,7 +91,17 @@ public class DataLayer {
         }
     }
 
-    public ClientInfo getClient(int client_nif) throws ClientManagementException {
+    public ClientInfo getClient(int clientNif)throws ClientManagementException{
+        ClientInfo client;
+
+        client = getClientAux(clientNif);
+        if (client == null)
+            throw new ClientDoesntExistException(ErrorCodes.CLIENT_NOT_FOUND, ErrorCodes.CLIENT_NOT_FOUND_MESSAGE);
+
+        return client;
+    }
+
+    private ClientInfo getClientAux(int client_nif) throws ClientManagementException {
         Session session = null;
         Client client = null;
 

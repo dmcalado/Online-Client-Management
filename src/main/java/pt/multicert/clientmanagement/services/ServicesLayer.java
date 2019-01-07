@@ -98,14 +98,8 @@ public class ServicesLayer {
         try{
             client = this.dbLayer.getClient(request.getNif());
             response.setClient(client);
-            if (client == null){
-                response.getResult().setErrorCode(ErrorCodes.CLIENT_NOT_FOUND);
-                response.getResult().setErrorMessage(ErrorCodes.CLIENT_NOT_FOUND_MESSAGE);
-            }
-            else{
-                response.getResult().setErrorCode(ErrorCodes.OK);
-                response.getResult().setErrorMessage(ErrorCodes.OK_MESSAGE);
-            }
+            response.getResult().setErrorCode(ErrorCodes.OK);
+            response.getResult().setErrorMessage(ErrorCodes.OK_MESSAGE);
         }
         catch (ClientManagementException ex)
         {
